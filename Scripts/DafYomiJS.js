@@ -14,8 +14,15 @@
             }
         }
     });
-    document.addEventListener("menubutton", onMenuKeyDown, false);
 
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("menubutton", onMenuKeyDown, false);
+    }
     function onMenuKeyDown() {
         alert("press on menu");
     }
