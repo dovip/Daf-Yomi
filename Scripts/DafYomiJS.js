@@ -14,12 +14,9 @@
             }
         }
     });
-    //    $.getJSON("http://ec2-50-17-140-246.compute-1.amazonaws.com/Daf%20Yomi/api/Pages/GetPageByDate?key=" + dateKey,
-    //        function (data) {
-    //            if (data != null) {
-    //                $("#daf").append(data.PageData);
-    //                $("#date").append(data.Date);
-    //                $("#dafNumber").append(data.DafNumber);
-    //            }
-    //        });
+    document.addEventListener("menubutton", onMenuKeyDown, false);
+
+    function onMenuKeyDown() {
+        alert("press on menu");
+    }
 }); 
